@@ -1,0 +1,48 @@
+@import 'src/styles/variables';
+
+.articleHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+  }
+
+  &__title {
+    color: $info_color;
+    font-size: 20px;
+    line-height: 28px;
+    text-decoration: none;
+    max-width: 700px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+  }
+  &__description {
+    max-height: 56px;
+    overflow: hidden;
+    padding: 5px 0;
+    text-overflow: ellipsis;
+    width: 682px;
+  }
+}
